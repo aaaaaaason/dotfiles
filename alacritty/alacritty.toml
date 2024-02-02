@@ -1,10 +1,9 @@
-import = ["~/.config/alacritty/themes/themes/ubuntu.toml"]
+import = ["~/.config/alacritty/themes/themes/kanagawa_dragon.toml"]
 
 [window]
 decorations = "None"
 opacity = 0.95
 startup_mode = "Maximized"
-#startup_mode = "Windowed"
 blur = true
 padding = { x = 4, y = 4 }
 option_as_alt = "Both"

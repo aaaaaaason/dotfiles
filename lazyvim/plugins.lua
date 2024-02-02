@@ -11,7 +11,7 @@
 return {
   -- add gruvbox
   {
-    "craftzdog/solarized-osaka.nvim",
+    "rebelot/kanagawa.nvim",
     lazy = false,
     priority = 1000,
     opts = {},
@@ -19,7 +19,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "solarized-osaka",
+      colorscheme = "kanagawa-dragon",
     },
   },
   {
