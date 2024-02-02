@@ -1,0 +1,23 @@
+import = ["~/.config/alacritty/themes/themes/ubuntu.toml"]
+
+[window]
+decorations = "None"
+opacity = 0.95
+startup_mode = "Maximized"
+blur = true
+padding = { x = 4, y = 4 }
+option_as_alt = "Both"
+
+[scrolling]
+multiplier = 5
+
+[font]
+normal = { family = "Hack Nerd Font" }
+size = 16
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam" }
+vi_mode_style = { shape = "Block" }
