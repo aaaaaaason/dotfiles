@@ -1,0 +1,10 @@
+[Unit]
+Description="Keep awake while SSH connection"
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=2min
+Unit=ssh-keep-awake.service
+
+[Install]
+WantedBy=multi-user.target

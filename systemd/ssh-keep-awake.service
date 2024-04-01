@@ -1,0 +1,5 @@
+[Unit]
+Description="Keep awake while SSH connection"
+
+[Service]
+ExecStart=/usr/local/bin/ssh-keep-awake.sh
