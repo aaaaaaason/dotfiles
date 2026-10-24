@@ -21,6 +21,20 @@ else
 	echo "nvm is already installed at $NVM_DIR."
 fi
 
+# Install the latest available LTS release and make it the default for new shells.
+NVM_DIR="$NVM_DIR" bash -c '
+set -euo pipefail
+source "$NVM_DIR/nvm.sh"
+nvm install --lts
+LTS_VERSION="$(nvm version "lts/*")"
+if [[ "$LTS_VERSION" == "N/A" ]]; then
+	echo "Could not resolve the installed Node.js LTS version." >&2
+	exit 1
+fi
+nvm alias default "$LTS_VERSION"
+nvm use default
+'
+
 mkdir -p "$(dirname -- "$BASHRC")"
 touch "$BASHRC"
 if ! grep -Fq '$NVM_DIR/nvm.sh' "$BASHRC"; then

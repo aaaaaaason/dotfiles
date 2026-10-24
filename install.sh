@@ -5,6 +5,7 @@ REPO_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
 # System packages
 "$REPO_DIR/install_lazyvim_deps_apt.sh"
+"$REPO_DIR/install_cli_tools_apt.sh"
 "$REPO_DIR/install_neovim_apt.sh"
 "$REPO_DIR/install_go_apt.sh"
 "$REPO_DIR/install_docker_apt.sh"
@@ -21,8 +22,17 @@ REPO_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 "$REPO_DIR/install_tmux.sh"
 "$REPO_DIR/install_codex.sh"
 
+# Shell configuration
+"$REPO_DIR/install_shell.sh"
+
 # Desktop apps
 "$REPO_DIR/install_apps_snap.sh"
+
+# GNOME desktop tools and keyboard settings
+"$REPO_DIR/install_gnome.sh"
+
+# Traditional Chinese Pinyin input
+"$REPO_DIR/install_rime_pinyin.sh"
 
 # Fonts
 "$REPO_DIR/install_ubuntu_mono_nerd_font.sh"

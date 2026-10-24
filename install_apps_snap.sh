@@ -29,3 +29,4 @@ install_snap_app() {
 install_snap_app code code --classic
 install_snap_app intellij-idea intellij-idea --classic
 install_snap_app spotify spotify
+install_snap_app yq yq

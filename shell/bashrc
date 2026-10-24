@@ -1,0 +1,12 @@
+# Shared interactive Bash settings managed in the dotfiles repo.
+
+export EDITOR="${EDITOR:-nvim}"
+export VISUAL="${VISUAL:-$EDITOR}"
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias gst='git status --short --branch'
+
+if command -v zoxide >/dev/null 2>&1; then
+	eval "$(zoxide init bash)"
+fi
