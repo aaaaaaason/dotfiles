@@ -10,6 +10,7 @@ REPO_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 "$REPO_DIR/install_go_apt.sh"
 "$REPO_DIR/install_docker_apt.sh"
 "$REPO_DIR/install_cpp_build_deps_apt.sh"
+"$REPO_DIR/install_vcpkg.sh"
 
 # Language runtimes
 "$REPO_DIR/install_nvm.sh"

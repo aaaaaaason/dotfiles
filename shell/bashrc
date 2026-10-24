@@ -10,3 +10,10 @@ alias gst='git status --short --branch'
 if command -v zoxide >/dev/null 2>&1; then
 	eval "$(zoxide init bash)"
 fi
+
+VCPKG_ROOT="${VCPKG_ROOT:-$HOME/.local/share/vcpkg}"
+if [[ -d "$VCPKG_ROOT" ]]; then
+	export VCPKG_ROOT
+	PATH="$VCPKG_ROOT:$PATH"
+	export PATH
+fi
